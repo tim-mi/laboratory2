@@ -1,4 +1,4 @@
-// Calculator 2.cpp: îïğåäåëÿåò òî÷êó âõîäà äëÿ êîíñîëüíîãî ïğèëîæåíèÿ.
+// Calculator 2.cpp: Ã®Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã¿Ã¥Ã² Ã²Ã®Ã·ÃªÃ³ Ã¢ÃµÃ®Ã¤Ã  Ã¤Ã«Ã¿ ÃªÃ®Ã­Ã±Ã®Ã«Ã¼Ã­Ã®Ã£Ã® Ã¯Ã°Ã¨Ã«Ã®Ã¦Ã¥Ã­Ã¨Ã¿.
 //
 
 #include "stdafx.h"
@@ -46,14 +46,14 @@ double square(float a)
 	return res;
 }
 
-double squar(float a)
+double squar(float b)
 {
 	double c = 0, res;
-	res = a;
+	res = b;
 	while (c - res > 0.00001 || c - res < -0.00001)
 	{
 		c = res;
-		res = (c + a / res) / 2;
+		res = (c + b / res) / 2;
 	}
 	return res;
 }
