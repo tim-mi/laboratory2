@@ -72,8 +72,11 @@ double pow(float a, unsigned int b)
 
 int main()
 {
-	float a = 10.000;
-	unsigned int b = 4;
+        float a, b;
+	cout << "a=";
+	cin >> a;
+	cout << "b=";
+	cin >> b;
 	cout << "a + b = " << sum(a, b) << endl;
 	cout << "a - b = " << sub(a, b) << endl;
 	cout << "a / b = " << div(a, b) << endl;
