@@ -44,7 +44,7 @@ SCENARIO("calculator pow","[pow]"){
 SCENARIO("calculator square","[square]"){
     double a = 36;
     
-    double rt = square_root( a);
+    double rt = square( a);
     
       REQUIRE( rt == 6);
 }
