@@ -30,7 +30,7 @@ double square(float a)
 	return res;
 }
 
-double square( unsigned int b)
+double squar( unsigned int b)
 {
 	double c = 0, res;
 	res = b;
