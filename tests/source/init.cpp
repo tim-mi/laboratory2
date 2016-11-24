@@ -49,7 +49,7 @@ SCENARIO("calculator square","[square]"){
       REQUIRE( rt == 6);
 }
 SCENARIO("calculator square","[square]"){
-    float b = 81;
+    unsigned int b = 81;
     
     double rt = square( b);
     
