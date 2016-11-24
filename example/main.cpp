@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 
 using namespace std;
 
@@ -18,6 +17,6 @@ int main()
 	cout << "a^1/2 = " << square(a) << endl;
 	cout << "b^1/2 = " << squar(b) << endl;
 	cout << "a^b = " << pow(a, b) << endl;
-	_getch();
+	system("pause");
 	return 0;
 }
