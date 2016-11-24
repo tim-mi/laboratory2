@@ -30,6 +30,17 @@ double square(float a)
 	return res;
 }
 
+double square( unsigned int b)
+{
+	double c = 0, res;
+	res = b;
+	while (c - res > 0.00001 || c - res < -0.00001)
+	{
+		c = res;
+		res = (c + b / res) / 2;
+	}
+	return res;
+}
 
 double pow(float a, unsigned int b)
 {
