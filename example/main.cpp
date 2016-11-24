@@ -16,7 +16,7 @@ int main()
 	cout << "a / b = " << div(a, b) << endl;
 	cout << "a * b = " << mult(a, b) << endl;
 	cout << "a^1/2 = " << square(a) << endl;
-	cout << "b^1/2 = " << square(b) << endl;
+	cout << "b^1/2 = " << squar(b) << endl;
 	cout << "a^b = " << pow(a, b) << endl;
 	_getch();
 	return 0;
