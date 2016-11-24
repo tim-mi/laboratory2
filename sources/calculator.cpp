@@ -30,7 +30,7 @@ double square(float a)
 	return res;
 }
 
-double squar(float b)
+double square(float b)
 {
 	double c = 0, res;
 	res = b;
