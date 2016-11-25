@@ -44,14 +44,14 @@ SCENARIO("calculator pow","[pow]"){
 SCENARIO("calculator square","[square]"){
     float a = 36;
     
-    double rt = square( a);
+    double rt = *square( a);
     
       REQUIRE( rt == 6);
 }
 SCENARIO("calculator squar","[squar]"){
     int b = 81;
     
-    double rt = squar( b);
+    double rt = *squar( b);
     
       REQUIRE( rt == 9);
 }
