@@ -51,7 +51,7 @@ SCENARIO("calculator square","[square]"){
 SCENARIO("calculator squar","[squar]"){
     int b = 81;
     
-    double rt = *squar( b);
+    double *rt = squar( b);
     
       REQUIRE( rt == 9);
 }
