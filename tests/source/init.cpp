@@ -42,11 +42,11 @@ SCENARIO("calculator pow","[pow]"){
       REQUIRE( rt == 1024);
 }
 SCENARIO("calculator square","[square]"){
-    float a = 36;
+    float a = -5;
     
-    double rt = *square( a);
+ double *rt = square( a);
     
-      REQUIRE( rt == 6);
+      REQUIRE( rt == nullptr);
 }
 SCENARIO("calculator squar","[squar]"){
     int b = 81;
