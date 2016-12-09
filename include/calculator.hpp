@@ -1,7 +1,7 @@
-double sum(float a, int b);
-double sub(float a, int b);
-double *div(float a, int b);
-double mult(float a, int b);
+double sum(float a, float b);
+double sub(float a, float b);
+double *div(float a, float b);
+double mult(float a, float b);
 double *square(float a);
-double *squar( int b);
-double pow (float a, long b);
+double *squar(float b);
+double pow(float a, long b);
