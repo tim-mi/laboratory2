@@ -27,11 +27,11 @@ SCENARIO("calculator div", "[div]"){
 }
 SCENARIO("calculator div", "[div]"){
     float a = 4;
-    float b = 1,5;
+    float b = 1.5;
     
     double *rt = div( a, b);
     
-      REQUIRE( rt == 2,66667);
+      REQUIRE( rt == 2.66667);
 }
 SCENARIO("calculator mult","[mult]"){
     float a = 6;
