@@ -44,7 +44,7 @@ SCENARIO("calculator pow","[pow]"){
 SCENARIO("calculator square","[square]"){
     float a = -5;
     
- double rt = *square( a);
+ double *rt = square( a);
     
       REQUIRE( rt == nullptr);
 }
