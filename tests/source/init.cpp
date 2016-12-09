@@ -21,7 +21,7 @@ SCENARIO("calculator div", "[div]"){
     double a = 16;
     double b = 2.5;
     
-   long double *rt = div( a, b);
+   long double rt = *div( a, b);
     
       REQUIRE( rt == 6.4);
 }
