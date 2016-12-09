@@ -8,10 +8,10 @@ double sub(float a, float b)
 	return a - b;
 }
 
-double *div(float a, float b)
+long double * div(double a, double b)
 {
 	if (b != 0){
-		double *p = new double;
+		long double *p = new long double;
 		*p = a / b;
 		return p;
 	}
@@ -74,7 +74,7 @@ double pow(float a, long  b)
 		}
 	}
 	else {
-		for (unsigned int i = 0; i < b; i++)
+		for (unsigned int i = 0; i < b; ++i)
 		{
 			res =1/( res * a);
 		}
