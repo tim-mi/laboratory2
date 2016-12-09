@@ -3,7 +3,7 @@
 
 SCENARIO("calculator sum", "[sum]") {
     float a = 5;
-    int b = 9;
+    float b = 9;
 
     double rt = sum( a, b);
       
@@ -11,7 +11,7 @@ SCENARIO("calculator sum", "[sum]") {
 }
 SCENARIO("calculator sub", "[sub]") {
     float a = 10;
-    int b = 1;
+    float b = 1;
     
     double rt = sub( a, b);
     
@@ -19,15 +19,23 @@ SCENARIO("calculator sub", "[sub]") {
 }
 SCENARIO("calculator div", "[div]"){
     float a = 16;
-    int b = 0;
+    float b = 0;
     
     double *rt = div( a, b);
     
       REQUIRE( rt == nullptr);
 }
+SCENARIO("calculator div", "[div]"){
+    float a = 4;
+    float b = 1,5;
+    
+    double *rt = div( a, b);
+    
+      REQUIRE( rt == 2,66667);
+}
 SCENARIO("calculator mult","[mult]"){
     float a = 6;
-    int b = 7;
+    float b = 7;
     
     double rt = mult( a, b);
     
@@ -49,7 +57,7 @@ SCENARIO("calculator square","[square]"){
       REQUIRE( rt == nullptr);
 }
 SCENARIO("calculator squar","[squar]"){
-    int b = 81;
+    float b = 81;
     
     double rt =*squar( b);
     
