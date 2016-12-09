@@ -19,11 +19,11 @@ SCENARIO("calculator sub", "[sub]") {
 }
 SCENARIO("calculator div", "[div]"){
     float a = 16;
-    float b = 0;
+    float b = 2.5;
     
     double *rt = div( a, b);
     
-      REQUIRE( rt == nullptr);
+      REQUIRE( rt == 6.4);
 }
 SCENARIO("calculator mult","[mult]"){
     float a = 6;
