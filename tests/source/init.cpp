@@ -18,14 +18,6 @@ SCENARIO("calculator sub", "[sub]") {
       REQUIRE( rt == 9);
 }
 SCENARIO("calculator div", "[div]"){
-    float a = 16;
-    float b = 0;
-    
-    double *rt = div( a, b);
-    
-      REQUIRE( rt == nullptr);
-}
-SCENARIO("calculator div", "[div]"){
     float a = 4;
     float b = 1.5;
     
