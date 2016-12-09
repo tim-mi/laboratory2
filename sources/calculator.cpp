@@ -1,14 +1,14 @@
-double sum(float a,  int b)
+double sum(float a, float b)
 {
 	return a + b;
 }
 
-double sub(float a,  int b)
+double sub(float a, float b)
 {
 	return a - b;
 }
 
-double *div(float a,  int b)
+double *div(float a, float b)
 {
 	if (b != 0){
 		double *p = new double;
@@ -18,7 +18,7 @@ double *div(float a,  int b)
 	else return nullptr;
 }
 
-double mult(float a,  int b)
+double mult(float a, float b)
 {
 	return a * b;
 }
@@ -29,13 +29,13 @@ double *square(float a)
 	if (a > 0){
 		double *r = new double;
 		if (a != 1 && a != 0) {
-	while (c - res > 0.00001 || c - res < -0.00001)
-	{
-		c = res;
-		res = (c + a / res) / 2;
-	}
-	*r= res;
-}
+			while (c - res > 0.00001 || c - res < -0.00001)
+			{
+				c = res;
+				res = (c + a / res) / 2;
+			}
+			*r = res;
+		}
 		else if (a == 1) *r = 1;
 		else if (a == 0) *r = 0;
 
@@ -43,7 +43,7 @@ double *square(float a)
 	}
 	else return nullptr;
 }
-double *squar( int b)
+double *squar(float  b)
 {
 	double c = 0, res = b;
 	if (b > 0){
@@ -57,7 +57,7 @@ double *squar( int b)
 			*d = res;
 		}
 		else if (b == 1) *d = 1;
-		else if (b == 0) *d= 0;
+		else if (b == 0) *d = 0;
 
 		return d;
 	}
@@ -67,10 +67,17 @@ double *squar( int b)
 double pow(float a, long  b)
 {
 	double res = 1.0;
-	for (unsigned int i = 0; i < b; i++)
-	{
-		res = res * a;
+	if (b > 0){
+		for (unsigned int i = 0; i < b; i++)
+		{
+			res = res * a;
+		}
+	}
+	else {
+		for (unsigned int i = 0; i < b; i++)
+		{
+			res =1/( res * a);
+		}
 	}
 	return res;
 }
-
