@@ -15,9 +15,9 @@ int main()
 
 	cout << "a - b = " << sub(a, b) << endl;
 
-	double *res = div(a, b);
-	if (res)
-		cout << "a / b = " << *div(a, b) << endl;
+	long double * res = div(a, b);
+	if (res!=nullptr)
+		cout << "a / b = " << * res << endl;
 	else
 		cout << "a/0 -> error" << endl;
 	delete res;
